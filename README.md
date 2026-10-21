@@ -43,4 +43,5 @@ portfolio-it-support/
 - Each folder has its own `assets/`.
 - File names use lowercase with dashes: `windows-11-baseline.md`.
 - Sensitive files must be redacted (passwords, tokens, public IPs, serial numbers).
+- Every document must fill the file properties.
 - Every document must include: Purpose, Scope, Prerequisites, Steps, Verification, Rollback.
