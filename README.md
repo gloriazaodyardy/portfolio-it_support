@@ -4,7 +4,7 @@ type: readme
 status: Active
 author: Gloriaza Y.L.O
 created: 2026-10-21
-updated: 2026-10-21
+updated: 2026-10-25
 version: "1.0"
 tags:
   - it-support
