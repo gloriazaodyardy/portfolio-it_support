@@ -1,6 +1,7 @@
 ---
 title: OPERATING SYSTEM INSTALLATION TEMPLATE
 type: installation-template
+deployment_type: Bare metal / VM / Upgrade
 status: Draft
 author: Gloriaza Odyardy
 created: 2026-10-25
@@ -9,8 +10,7 @@ version: "1.0"
 document_id: "{{DOC_ID}}"
 platform: "{{OS_FAMILY}} / {{OS_NAME}} / {{OS_EDITION}} / [[OS_VERSION}} / {{ARCH}}"
 file_name: "{{FILE_NAME}}"
-deployment_type: Bare metal / VM / Upgrade
-hostname: "{{HOSTNAME}}"
+hostname: "{{DEPLOYMENT-ROLE-OS-NUMBER}}"
 timezone: "{{TIMEZONE}}"
 encryption: "{{ENCRYPTION}}"
 tags:
@@ -32,10 +32,10 @@ confidentiality: Redact passwords, tokens, public IPs, and serial numbers before
 `=(space)this.title` 
 ```
 ## 1. Purpose
-Provide a standard, repeatable, and verifiable operating system installation baseline.
+Provide a standard, repeatable, and predictable Operating System (OS) installation baseline.
 ## 2. Scope
-- In scope: media, OS install, OOBE, baseline configuration, verification
-- Out of scope: MDM/domain design, mass deployment, application-specific configuration
+- **In scope**: media, OS install, OOBE, baseline configuration, verification
+- **Out of scope**: MDM/domain design, mass deployment, application-specific configuration
 ## 3. Prerequisites
 - [ ] Official installation media and verified checksum
 - [ ] Valid license if required

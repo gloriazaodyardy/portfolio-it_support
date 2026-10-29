@@ -1,16 +1,17 @@
 ---
 title: WINDOWS INSTALLATION BASELINE
 type: installation-template
+deployment_type: Bare metal / VM / Upgrade
 status: Draft
 author: Gloriaza Odyardy
 created: 2026-10-25
 updated: 2026-10-25
 version: "1.0"
 document_id: "{{DOC_ID}}"
-platform: Windows / {{WINDOWS_EDITION}} / {{WINDOWS_VERSION}} / {{ARCH}}
 file_name: "{{FILE_NAME}}"
-deployment_type: Bare metal / VM / Upgrade
-hostname: "{{HOSTNAME}}"
+platform: Windows / {{WINDOWS_EDITION}} / {{WINDOWS_VERSION}} / {{ARCH}}
+vm_name: "{{VM_NAME}}"
+hostname: "{{DEPLOYMENT-ROLE-OS-NUMBER}}"
 timezone: "{{TIMEZONE}}"
 primusr/stdusr: "{{PRIMARY_USER}} / {{STANDARD_USER}}"
 encryption: "{{ENCRYPTION}}"
@@ -34,10 +35,10 @@ confidentiality: Redact passwords, tokens, public IPs, and serial numbers before
 `=(space)this.title` 
 ```
 ## 1. Purpose
-Standardize a clean, secure, and verifiable Windows installation.
+Standardize a clean Windows installation.
 ## 2. Scope
-- In scope: media, installation, OOBE, baseline config, verification
-- Out of scope: MDM/domain design, mass deployment, LOB app config
+- **In scope**: media, installation, OOBE, baseline config, verification
+- **Out of scope**: MDM/domain design, mass deployment, LOB app config
 ## 3. Prerequisites
 - [ ] ISO verified / bootable media ready
 - [ ] Valid license or entitlement
